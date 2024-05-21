@@ -45,7 +45,7 @@ app.get('/weather', async (req, res) => {
     }
 });
 
-app.post('/weather/name', async (req, res) => {
+app.post('/name', async (req, res) => {
     const { location, city, state, country } = req.body;
 
     try {
