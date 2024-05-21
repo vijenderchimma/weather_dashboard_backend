@@ -57,7 +57,6 @@ app.post('/name', async (req, res) => {
         const osmResponse = await axios.get('https://nominatim.openstreetmap.org/search', {
             params: {
                 q: searchQuery,
-                format: 'json',
                 limit: 1
             }
         });
